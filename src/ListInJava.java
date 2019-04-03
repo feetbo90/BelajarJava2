@@ -41,3 +41,22 @@ public class ListInJava {
 
     }
 }
+/*
+    matriks transpose
+    20  30
+    40  50
+
+    Transpose
+    20  40
+    30  50
+
+    20  30  40
+    50  60  70
+
+    T
+    20  50
+    30  60
+    40  70
+
+
+ */
