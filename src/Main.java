@@ -12,10 +12,10 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        Scanner input = null;
+        Scanner input = new Scanner(System.in);
         try {
-            int nilai = input.nextInt();
-        }catch (Exception e){
+             input.nextInt();
+        }catch (NullPointerException e){
             System.out.println("Scanner tidak membuat objek");
         }
     }
