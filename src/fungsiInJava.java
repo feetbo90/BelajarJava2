@@ -25,10 +25,10 @@ public class fungsiInJava {
     }
 
 
-    public int[] getArray() {
+    /*public int[] getArray() {
         int []array = new int[2];
         return array;
-    }
+    }*/
 
     public static void main (String [] args) {
         
