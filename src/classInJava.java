@@ -1,15 +1,19 @@
+import java.util.Scanner;
+
 public class classInJava {
+    public static void main(String[] args){
 
-    public static void main (String [] args) {
+        Scanner input = new Scanner(System.in);
 
-        Mahasiswa budi = new Mahasiswa("budi", "mariendal", "080803069", "TI");
-        System.out.println("Nama : " + budi.getNama() + "\nAlamat : " + budi.getAlamat() +
-            "\nNIM : " + budi.getNIM() + "\nJurusan : " + budi.getJurusan());
+        System.out.print("Masukkan Berapa Mahasiswa : ");
+        int jumlahMahasiswa = input.nextInt();
+        System.out.print("Masukkan Banyak Tugas : ");
+        int jumlahTugas = input.nextInt();
 
-        System.out.println(budi.ambilNamaOrangTua());
 
+        dataMahasiswa object = new dataMahasiswa();
 
-        System.out.println(budi.getNIM("tambahan"));
+        object.setDataMahasiswa(jumlahMahasiswa, jumlahTugas);
+        object.getDataMahasiswa(jumlahMahasiswa, jumlahTugas);
     }
-
 }
